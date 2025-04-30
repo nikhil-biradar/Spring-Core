@@ -1,5 +1,6 @@
 package org.lifecycle;
 
+// Implementing bean life cycle using xml
 public class StudentEx {
     private int age;
     private String name;
@@ -17,6 +18,7 @@ public class StudentEx {
     }
 
     public void setAge(int age) {
+        System.out.println("Setting Age");
         this.age = age;
     }
 
@@ -34,5 +36,13 @@ public class StudentEx {
                 "age=" + age +
                 ", name='" + name + '\'' +
                 '}';
+    }
+
+    public void init(){
+        System.out.println("Inside init method");
+    }
+
+    public void destroy(){
+        System.out.println("Inside destroy method");
     }
 }

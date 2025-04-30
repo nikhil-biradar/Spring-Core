@@ -10,9 +10,22 @@
            https://www.springframework.org/schema/context/spring-context.xsd">
 
 
-    <bean class="org.lifecycle.StudentEx" name="student">
+    <context:annotation-config/>
+
+   <bean class="org.lifecycle.StudentEx" name="student" init-method="init" destroy-method="destroy">
         <property name="age" value="22"/>
         <property name="name" value="Deepak Jadhav"/>
-
     </bean>
+
+    <bean class="org.lifecycle.Bank" name="bank">
+        <property name="name" value="PNB"/>
+    </bean>
+
+
+    <bean class="org.lifecycle.Example" name="example">
+        <property name="subject" value="Science"/>
+    </bean>
+
+    <bean class="org.springframework.context.annotation.CommonAnnotationBeanPostProcessor" name="annotation"/>
+
 </beans>
