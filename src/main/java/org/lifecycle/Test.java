@@ -16,6 +16,5 @@ public class Test {
 
         Example example = (Example) context.getBean("example");
         System.out.println(example);
-
     }
 }

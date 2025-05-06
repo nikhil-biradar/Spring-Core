@@ -12,7 +12,5 @@
     <bean class="org.constructor_injection.Person" name="person">
         <constructor-arg value="Nikhil"/>
         <constructor-arg value="23" type="int"/>
-
     </bean>
-
 </beans>
