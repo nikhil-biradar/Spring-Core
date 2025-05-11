@@ -3,7 +3,7 @@ package org.lifecycle;
 import org.springframework.beans.factory.DisposableBean;
 import org.springframework.beans.factory.InitializingBean;
 
-// Implementing bean life cycle using interfaces
+/// Implementing bean life cycle using interfaces
 public class Bank implements InitializingBean, DisposableBean {
     private String name;
 

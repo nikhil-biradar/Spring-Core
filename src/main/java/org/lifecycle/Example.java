@@ -3,6 +3,7 @@ package org.lifecycle;
 import javax.annotation.PostConstruct;
 import javax.annotation.PreDestroy;
 
+/// Implementing bean life cycle using interfaces
 public class Example {
     private String subject;
 

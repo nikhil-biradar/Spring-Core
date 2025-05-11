@@ -1,6 +1,6 @@
 package org.lifecycle;
 
-// Implementing bean life cycle using xml
+/// Implementing bean life cycle using xml
 public class StudentEx {
     private int age;
     private String name;
