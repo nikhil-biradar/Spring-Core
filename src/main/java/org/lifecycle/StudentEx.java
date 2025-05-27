@@ -1,34 +1,14 @@
 package org.lifecycle;
 
+import lombok.*;
+
 /// Implementing bean life cycle using xml
+@Getter @Setter
+@NoArgsConstructor
+@AllArgsConstructor
 public class StudentEx {
     private int age;
     private String name;
-
-    public StudentEx() {
-    }
-
-    public StudentEx(int age, String name) {
-        this.age = age;
-        this.name = name;
-    }
-
-    public int getAge() {
-        return age;
-    }
-
-    public void setAge(int age) {
-        System.out.println("Setting Age");
-        this.age = age;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
 
     @Override
     public String toString() {

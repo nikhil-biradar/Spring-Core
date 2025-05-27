@@ -1,22 +1,16 @@
 package org.lifecycle;
 
+import lombok.*;
 import org.springframework.beans.factory.DisposableBean;
 import org.springframework.beans.factory.InitializingBean;
 
 /// Implementing bean life cycle using interfaces
+@Getter
+@Setter
+@NoArgsConstructor
 public class Bank implements InitializingBean, DisposableBean {
     private String name;
 
-    public Bank() {
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
 
     @Override
     public String toString() {

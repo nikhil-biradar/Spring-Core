@@ -1,22 +1,14 @@
 package org.lifecycle;
 
+import lombok.*;
 import javax.annotation.PostConstruct;
 import javax.annotation.PreDestroy;
 
 /// Implementing bean life cycle using interfaces
+@Getter @Setter
+@NoArgsConstructor
 public class Example {
     private String subject;
-
-    public Example() {
-    }
-
-    public String getSubject() {
-        return subject;
-    }
-
-    public void setSubject(String subject) {
-        this.subject = subject;
-    }
 
     @Override
     public String toString() {
